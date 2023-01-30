@@ -1,0 +1,25 @@
+{
+    "name": "dromons/kexibq",
+    "description": "PHP Framework",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dromons\\Kexibq\\": "System/Package/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lugovoy A."
+        }
+    ],
+    "minimum-stability": "dev",
+    "config": {
+        "vendor-dir": "System/Package"
+    },
+    "extra": {
+        "installer-paths": {
+            "System/Package/{$name}": ["vendor/package"]
+        }
+    },
+    "require": {}
+}
