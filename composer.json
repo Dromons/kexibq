@@ -23,6 +23,6 @@
     },
     "require": {
         "php": ">=7.2.0",
-        "cycle/annotated":"*"
+        "topthink/think-orm":"*"
     }
 }
