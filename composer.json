@@ -4,8 +4,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Dromons\\Kexibq\\": "System/Package/",
-            "Dromons\\Kexibq\\Orm\\": "System/Package/think"
+            "System\\": "System/Package/",
+            "System\\Orm\\": "System/Package/think"
         }
     },
     "authors": [
