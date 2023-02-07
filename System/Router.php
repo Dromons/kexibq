@@ -37,14 +37,8 @@ class Router
      */
     public static function get($uri, $handler): void
     {
-        if (!empty(self::$prefix)) {
-            $uri = self::$prefix . $uri;
-        }
-
-        if ($uri != "/") {
-            $uri = rtrim($uri, "/");
-        }
-
+        if (!empty(self::$prefix)) $uri = self::$prefix . $uri;
+        if ($uri != "/") $uri = rtrim($uri, "/");
         self::$router['get'][$uri] = $handler;
     }
 
@@ -56,14 +50,8 @@ class Router
      */
     public static function post($uri, $handler): void
     {
-        if (!empty(self::$prefix)) {
-            $uri = self::$prefix . $uri;
-        }
-
-        if ($uri != "/") {
-            $uri = rtrim($uri, "/");
-        }
-
+        if (!empty(self::$prefix)) $uri = self::$prefix . $uri;
+        if ($uri != "/") $uri = rtrim($uri, "/");
         self::$router['post'][$uri] = $handler;
     }
 
